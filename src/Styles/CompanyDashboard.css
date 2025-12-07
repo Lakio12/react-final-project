@@ -1,0 +1,44 @@
+.company-dashboard-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("../Images/Warehouse7.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+}
+
+.company-dashboard-page .company-header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.company-dashboard-page .company-container {
+  width: 40%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+}
+
+.company-dashboard-page .company-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+.company-dashboard-page .company-links a:hover {
+  background-color: #45a049;
+}

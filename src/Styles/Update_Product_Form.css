@@ -1,0 +1,63 @@
+.update-product-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+  background-image: url("../Images/Warehouse3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.update-product-page .upf-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.update-product-page h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.update-product-page label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.update-product-page input,
+.update-product-page select,
+.update-product-page button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.update-product-page input,
+.update-product-page select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-product-page button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-product-page button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,267 @@
+/* Buyer page itself */
+.buyer-page {
+  background-image: url("../Images/Warehouse3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Search area */
+.buyer-page .search-container {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hidden checkbox for menu toggle */
+.buyer-page .menu {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Hamburger toggle box */
+.buyer-page .toggle {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  left: 15px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* Hamburger lines */
+.buyer-page .toggle .common {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: #8000ff;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.buyer-page .toggle .top_line {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buyer-page .toggle .middle_line {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buyer-page .toggle .bottom_line {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Checkbox checked effects */
+.buyer-page .menu:checked ~ .toggle .top_line {
+  top: 14px;
+  left: 2px;
+  width: 25px;
+  transform: rotate(45deg);
+}
+
+.buyer-page .menu:checked ~ .toggle .bottom_line {
+  top: 14px;
+  left: 2px;
+  width: 25px;
+  transform: rotate(-45deg);
+}
+
+.buyer-page .menu:checked ~ .toggle .middle_line {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.buyer-page .menu:checked ~ .slide {
+  transform: translateX(0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Side slide menu */
+.buyer-page .slide {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translateX(-250px);
+  transition: 0.5s ease;
+  z-index: 20;       /* above cards/results */
+}
+
+.buyer-page .toggle {
+  z-index: 30;       /* above slide */
+}
+
+
+.buyer-page h1 {
+  color: blue;
+  padding: 10px 30px 10px 0;
+  text-align: right;
+  font-weight: 800;
+}
+
+/* Menu list */
+.buyer-page ul li {
+  list-style: none;
+}
+
+.buyer-page ul li a {
+  display: block;
+  padding: 10px 0;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.buyer-page ul li:hover a {
+  background-color: antiquewhite;
+}
+
+/* Search form */
+.buyer-page form {
+  width: 600px;
+  height: 70px;
+  display: flex;
+}
+
+.buyer-page form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.buyer-page form button {
+  background: red;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Result container */
+.buyer-page .results {
+  max-width: 500px;
+  margin: 20px auto;        /* center horizontally */
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+
+.buyer-page .result-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+}
+
+/* Card layout */
+.buyer-page .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;              /* space between cards */
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/* Column is just a flex item wrapper */
+.buyer-page .column {
+  flex: 0 1 300px;        /* try to be 300px wide, shrink if needed */
+  display: flex;
+  justify-content: center;
+}
+
+/* Card itself */
+.buyer-page .card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside card */
+.buyer-page .card img {
+  display: block;
+  padding-top: 10%;
+  margin: 0 auto;
+}
+
+/* Inner text container (optional) */
+.buyer-page .card .container,
+.buyer-page .card .card-body {
+  padding: 0 8px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/* Subtitle */
+.buyer-page .title {
+  color: grey;
+  margin-bottom: 12px;
+}
+
+/* Card button */
+.buyer-page .button {
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: 0;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buyer-page .button:hover 
+{
+  background-color: #555;
+}
+
+@media screen and (max-width: 900px) {
+  .buyer-page .column {
+    width: 100%;      /* stack cards on smaller screens */
+  }
+}
+
+.buyer-page .card {
+  background-color: white;
+  width: 300px;
+  max-width: 90%;
+  margin: 0 auto;     /* center the card inside its column */
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buyer-page .button:hover {
+  background-color: #555;
+}

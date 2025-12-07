@@ -1,0 +1,81 @@
+/* Global defaults */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", sans-serif;
+}
+
+/* ===== HOME PAGE ===== */
+
+.home-page {
+  min-height: 100vh;
+  min-width: 50vw;
+  background-image: url("./Images/Warehouse.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The dark panel in the center */
+.home-card {
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 10px;
+  border-radius: 20px;
+  max-width: 1000px;
+  width: 50%;
+}
+
+/* Title text */
+.home-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+/* Subtitle text lines */
+.home-subtitle {
+  font-size: 1.2rem;
+  margin: 6px 0;
+}
+
+/* Button container (white box with buttons inside) */
+.home-buttons {
+  margin-top: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Individual buttons */
+.home-button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.05rem;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #45a049;
+}
+
+/* Remove underline from links around buttons */
+.home-buttons a {
+  text-decoration: none;
+}
+
