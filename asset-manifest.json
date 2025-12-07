@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-final-project/static/css/main.0c1e6cf8.css",
+    "main.js": "/react-final-project/static/js/main.76f66cbe.js",
+    "static/media/contact.jpg": "/react-final-project/static/media/contact.c38750088af9cf4256a6.jpg",
+    "static/media/Warehouse3.jpg": "/react-final-project/static/media/Warehouse3.7ec50062bd84d49d16e2.jpg",
+    "static/media/home.jpg": "/react-final-project/static/media/home.a539b2a993e2393b0282.jpg",
+    "static/media/Warehouse2.jpg": "/react-final-project/static/media/Warehouse2.5f2682fccb5092e4f756.jpg",
+    "static/media/goods.webp": "/react-final-project/static/media/goods.ab4fa3de7be21a5c67a3.webp",
+    "static/media/Warehouse5.jpg": "/react-final-project/static/media/Warehouse5.db3638ef3f5e7086ce31.jpg",
+    "static/media/Warehouse.jpg": "/react-final-project/static/media/Warehouse.55a1f07c5282d4ae3b6f.jpg",
+    "static/media/Warehouse7.jpg": "/react-final-project/static/media/Warehouse7.472976d4d6148780a45a.jpg",
+    "static/media/iphone.jpg": "/react-final-project/static/media/iphone.a9bc6499b87171f468af.jpg",
+    "index.html": "/react-final-project/index.html",
+    "main.0c1e6cf8.css.map": "/react-final-project/static/css/main.0c1e6cf8.css.map",
+    "main.76f66cbe.js.map": "/react-final-project/static/js/main.76f66cbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c1e6cf8.css",
+    "static/js/main.76f66cbe.js"
+  ]
+}
